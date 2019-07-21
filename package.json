@@ -9,7 +9,7 @@
     "start": "webpack-dev-server",
     "build": "webpack",
     "server": "node server.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false"
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "author": "Pawan Saket",
   "license": "ISC",
