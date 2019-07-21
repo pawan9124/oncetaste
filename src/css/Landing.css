@@ -1,0 +1,546 @@
+/*===============================================================
+                Navigation
+ =============================================================== */
+
+.navigation {
+  top: 10vh;
+  position: fixed;
+  z-index: 4;
+}
+
+.navigation ul li {
+  list-style: none;
+  margin-top: 10vh;
+}
+
+.navigation ul li i {
+  font-size: 1.3em;
+  color: #efefef;
+  opacity: 0.4;
+}
+.navigation ul li a {
+  text-decoration: none;
+}
+.menu-item {
+  margin-left: 10px;
+  visibility: hidden;
+  opacity: 0.4;
+  color: #efefef;
+  font-size: 14px;
+  letter-spacing: 2px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+.navigation ul li i:hover ~ .menu-item {
+  visibility: visible;
+}
+.burger-nav-burger,
+.close-nav-bar,
+.navigation-mobile {
+  display: none;
+}
+/*===============================================================
+                Section 1
+ =============================================================== */
+
+/* Background color:#ffe545 yellow */
+.section-1 {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/wooden_bg.jpg");
+  position: relative;
+  background-size: cover;
+  text-align: center;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  z-index: 3;
+}
+.position-relative {
+  position: relative;
+}
+
+.section-1 h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 6em;
+  font-family: "Pacifico", cursive;
+  color: #efefef;
+  font-weight: 100;
+}
+
+.section-1 p {
+  font-size: 2em;
+  font-family: "Proza Libre", sans-serif;
+  color: #efefef;
+  word-spacing: 10px;
+  margin: 0;
+}
+
+.section-1 .overlay,
+.overlay-footer {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  display: block;
+  top: 0;
+}
+.section-1 .headings {
+  display: block;
+  top: 0;
+  position: absolute;
+  left: 31%;
+}
+.section-1 .grouped-section {
+  position: absolute;
+  height: 500px;
+  width: 600px;
+  top: 13%;
+  left: 25%;
+}
+.section-1 .plate {
+  height: 400px;
+  width: 400px;
+  background-image: url("../images/plate.png");
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  background-position: -1px 25px;
+  background-size: 390px 391px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  box-shadow: 2px 59px 31px -41px rgba(0, 0, 0, 0.6),
+    0px 54px 15px -60px rgba(0, 0, 0, 0.1);
+}
+
+.section-1 .fork {
+  height: 275px;
+  width: 100px;
+  background-image: url("../images/fork.png");
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: none;
+  background-size: 100px 275px;
+}
+
+.section-1 .knife {
+  height: 275px;
+  width: 100px;
+  background-image: url("../images/knife.png");
+  position: absolute;
+  top: 47%;
+  left: 78%;
+  display: none;
+  background-size: 100px 275px;
+}
+.section-1 .soup {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/soup.png");
+  position: absolute;
+  top: 9%;
+  left: 3%;
+  display: none;
+  background-size: 200px 200px;
+}
+.section-1 .mustard {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/mustard.png");
+  position: absolute;
+  top: -7%;
+  left: 37%;
+  display: none;
+  background-size: 200px 200px;
+}
+.section-1 .bread {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/bread.png");
+  position: absolute;
+  top: 7%;
+  left: 68%;
+  display: none;
+  background-size: 200px 200px;
+}
+.section-1 .prawn-1 {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/prawn1.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 51%;
+  left: 27%;
+  display: none;
+  background-size: 200px 200px;
+}
+.section-1 .prawn-2 {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/prawn2.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 50%;
+  left: 50%;
+  display: none;
+  background-size: 200px 200px;
+  transform: rotate(334deg);
+}
+.section-1 .prawn-3 {
+  height: 200px;
+  width: 200px;
+  background-image: url("../images/prawn3.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 30%;
+  left: 36%;
+  display: none;
+  background-size: 200px 200px;
+  transform: rotate(-51deg);
+}
+.frame,
+.mobile-frame {
+  height: 100vh;
+  width: 100%;
+  background-image: url("../images/frame.png");
+  position: absolute;
+  background-size: cover;
+  background-size: 98% 111vh;
+  background-repeat: no-repeat;
+  background-position: 10px 20px;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+.mobile-frame {
+  z-index: -1;
+}
+
+/*===============================================================
+        Section 2
+ =============================================================== */
+
+/* Slide container*/
+.section-2 {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.section-2 h1 {
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-family: "Proza Libre", sans-serif;
+}
+.section-2 .col-6 {
+  padding: 0px;
+}
+.section-2 .vintage-text {
+  left: 25%;
+  position: relative;
+  width: 50%;
+  margin: 0px;
+}
+
+/*===============================================================
+        Section 3
+ =============================================================== */
+
+.section-3 {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+.section-3 .chilli {
+  height: 200px;
+  position: absolute;
+  top: -28%;
+  left: 0;
+}
+
+.section-3 .since {
+  background-image: url("../images/steak.jpg");
+  background-size: cover;
+  height: 600px;
+  padding: 0px;
+  background-position: center;
+  position: relative;
+}
+.section-3 .winebar {
+  background-image: url("../images/winebar.jpg");
+  background-size: cover;
+  height: 600px;
+  padding: 0;
+  background-position: center;
+  position: relative;
+}
+
+.section-3 h2 {
+  font-size: 2.2em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  left: 8%;
+  position: relative;
+  letter-spacing: 7px;
+  font-family: "Proza Libre", sans-serif;
+  color: #e4e2e2de;
+  margin: 3px;
+}
+.section-3 p {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  left: 8%;
+  line-height: 1em;
+  position: absolute;
+  letter-spacing: 5px;
+  font-family: "Proza Libre", sans-serif;
+  color: #e4e2e2de;
+  margin: 0;
+  padding: 12px;
+}
+.section-3 .winebar-text {
+  bottom: 18%;
+  position: absolute;
+}
+.section-3 .since-text {
+  top: 10%;
+  position: absolute;
+}
+
+/*===============================================================
+        Section 4
+ =============================================================== */
+.section-4 {
+  height: 600px;
+  width: 100%;
+  position: relative;
+}
+.section-4 h1 {
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-family: "Proza Libre", sans-serif;
+}
+
+.section-4 .sub-box {
+  position: relative;
+}
+.section-4 .silver,
+.section-4 .gold,
+.section-4 .platinum {
+  display: inline-block;
+  position: absolute;
+  height: 350px;
+  background: #fff;
+  width: 300px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  padding: 0px;
+  font-family: "Lato", sans-serif;
+  color: #222;
+}
+.section-4 .step-guide-list li {
+  list-style: none;
+}
+.section-4 .platinum {
+  margin-left: 16%;
+}
+
+.section-4 .step-guide-list .step-guide {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  background: #222;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+}
+.section-4 .step-guide-list .step-guide-text {
+  margin-left: 15%;
+  top: 8px;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+.section-4 .step-guide-list .step-guide .step-guide-number {
+  top: 8px;
+  position: relative;
+}
+.section-4 .black-line {
+  height: 50px;
+  width: 1px;
+  left: 17px;
+  background-color: #222;
+  position: relative;
+  top: 10px;
+}
+.section-4 .discover-world {
+  font-size: 25px;
+  font-weight: 100;
+  color: #2b2929c7;
+}
+.section-4 h2 {
+  font-size: 1.9em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 0.8em;
+  font-family: "Proza Libre", sans-serif;
+}
+.section-4 p {
+  font-family: "Lato", sans-serif;
+}
+.section-4 .subscription-details {
+  padding: 0;
+}
+.section-4 .subscription-box {
+  background-image: url("../images/bowl.jpg");
+  background-repeat: no-repeat;
+  height: 500px;
+  padding: 0;
+}
+.section-4 .gold h3,
+.section-4 .platinum h3 {
+  text-align: center;
+  font-weight: 100;
+}
+.section-4 .gold ul li,
+.section-4 .platinum ul li {
+  list-style: none;
+  margin: 5%;
+}
+
+.section-4 .price {
+  font-size: 29px;
+  text-decoration: underline;
+}
+.section-4 .listItemUL {
+  text-align: justify;
+}
+.section-4 .listDataSub {
+  margin-left: 4%;
+}
+
+.section-4 .gold a,
+.section-4 .platinum a {
+  padding: 17px 64px;
+  background: #222;
+  color: #efefef;
+  position: absolute;
+  left: 15%;
+  width: 30%;
+  text-align: center;
+  margin-top: 5%;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+.section-4 .discover-world {
+  margin: 5%;
+}
+.section-4 .best-cuisine {
+  margin: 4%;
+}
+.section-4 .delivery-text {
+  margin: 3%;
+}
+
+/*===============================================================
+        Section 5 Subscribe
+ =============================================================== */
+.section-5 {
+  height: 300px;
+  width: 100%;
+  position: relative;
+  background-image: url("../images/vine.png");
+  background-size: 38%;
+  background-repeat: no-repeat;
+  background-position: right top;
+  text-align: center;
+}
+
+.section-5 h1 {
+  line-height: 1em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 1.6em;
+  font-family: "Proza Libre", sans-serif;
+}
+.section-5 .subscription-email {
+  padding: 15px 150px;
+  margin-top: 5%;
+}
+.section-5 .subscription-button a {
+  padding: 17px 64px;
+  background: #222;
+  color: #efefef;
+  position: absolute;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: -7%;
+  text-decoration: none;
+  border-radius: 25px;
+}
+/*===============================================================
+        Section 6 Footer
+ =============================================================== */
+.main-content {
+  background: #fff;
+  z-index: 1;
+  position: relative;
+  margin-bottom: 100vh;
+  width: 100%;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  z-index: -1;
+  text-align: center;
+}
+
+footer #footerVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+footer .footer-heading h2 {
+  font-size: 4em;
+  font-family: "Pacifico", cursive;
+  opacity: 1;
+}
+footer .footer-about {
+  z-index: 2;
+  position: relative;
+}
+
+footer .footer-heading p {
+  font-size: 1.6em;
+  font-family: "Lato", sans-serif;
+}
+footer .contact ul li,
+footer .follow-us ul li {
+  list-style: none;
+  padding: 5px;
+}
+footer .follow-us ul li {
+  display: inline-block;
+  padding: 15px;
+  font-size: 1.5em;
+}
+footer .follow-us ul li i {
+  color: #efefef;
+}
