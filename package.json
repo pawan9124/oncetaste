@@ -8,8 +8,8 @@
     "watch": "webpack --watch",
     "start": "webpack-dev-server",
     "build": "webpack",
-    "server": "node server.js",
-    "heroku-postbuild": "webpack --config webpack.prod.js"
+    "server": "node server.js"
+    // "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "author": "Pawan Saket",
   "license": "ISC",
